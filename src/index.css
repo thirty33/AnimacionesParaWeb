@@ -5,6 +5,8 @@ body {
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
+	color: white;
+	font-family: Arial;
 }
 
 
@@ -66,3 +68,31 @@ h1 {
 	width: 200px;
 	height: 200px;
 }	*/
+
+.container {
+	border: 1px solid red;
+
+}
+
+.container:hover .cuadrado {
+	/*transform: rotate(-45deg);*/
+	/*transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg);*/
+	transform: rotate3d(1,1,1,-45deg);
+}
+
+.cuadrado {
+	width: 200px;
+	height: 200px; 
+	background: #7dc900;
+	margin: 20px;
+	transition:.3s;
+
+}
+
+.cuadrado.a{
+	transition:.9s;
+}
+
+.cuadrado.b{
+	transition:1.5s;
+}
