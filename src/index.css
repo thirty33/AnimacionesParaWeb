@@ -98,7 +98,7 @@ h1 {
 	perspective-origin: center;
 }
 
-.container:hover .cuadrado.a {
+.container.p:hover .cuadrado.a {
 	/*transform: translate(100px);*/
 	/*transform: translate(-100px);*/
 	/*transform: translate(100px, -100px);*/
@@ -110,3 +110,11 @@ h1 {
 	transition:.3s;
 }
 
+
+.container.s:hover .cuadrado.b {
+	transform: scale(2,.5);
+}
+
+.cuadrado.b {
+	transition:1s;
+}
