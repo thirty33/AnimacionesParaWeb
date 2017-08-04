@@ -227,6 +227,17 @@ h1 {
 
 }
 
+.cuadrado.w {
+	transition: 2s;
+	opacity: 0;
+	will-change:opacity, transform;
+}
+
+.cuadrado.w:hover {
+	opacity: 1;
+	background: red;
+	transform: scale(1.1);
+}
 
 
 
