@@ -155,3 +155,57 @@ h1 {
 
 
 }
+
+.container.an {
+	width: 100%;
+}
+
+
+.container.an:hover .cuadrado.e{
+	transition: none;
+	transform: none;
+	animation-name: cuadrado;
+	animation-duration: 1s;
+	/*animation-delay: 1s;*/
+	/*animation-iteration-count: 2;*/
+	animation-iteration-count: infinite;
+
+	/*animation-timing-function: ease;*/
+	/*animation-timing-function: ease-in;*/
+	/*animation-timing-function: ease-out;*/
+	/*animation-timing-function: ease-in-out;*/
+	/*animation-timing-function: linear;	*/
+	/*animation-timing-function: cubic-bezier(1,1,1,1);*/
+	/*animation-direction: reverse;*/
+	animation-direction: alternate;
+
+	/*Para que no regrese a valor inicial*/
+	/*animation-fill-mode:forwards;*/
+
+	/*estado de la animacion*/
+	/*animation-play-state: paused;*/
+	/*position: relative;*/
+
+
+
+}
+
+.cuadrado.e{
+	border-radius: 50%;
+	position: relative;
+	
+}
+
+@keyframes cuadrado {
+
+	0%{
+		/*opacity: 1;*/
+		left: 0;
+	}
+
+	100%{
+		/*opacity: 0;*/
+		left:calc(100% - 240px);
+	}
+}
+
