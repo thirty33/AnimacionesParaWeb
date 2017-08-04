@@ -240,6 +240,34 @@ h1 {
 }
 
 
+.container-3 {
+	border: 9px solid black;
+	width: 300px;
+	height: 600px;
+	perspective:250px;
+}
+
+.container-3:hover .cuadrado-3 {
+	transform:rotateY(10deg);
+	transform-origin: left;
+
+}
+
+.cuadrado-3 {
+	width: 298px;
+	height: 598px;
+	background: blue;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	transition:2s;
+}
+
+.cuadrado-3 .manubrio {
+	background: brown;
+	height: 20px;
+	width: 20px;
+}
 
 
 
