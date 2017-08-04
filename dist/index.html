@@ -90,6 +90,31 @@
 		</div>
 	</div>
 
+	<h1>Detectando eventos con JS, tercera animacion</h1>
+
+	<div class="container-2">
+		<div class="cuadrado-2" id= "cuadrado-2">
+
+			<p class="line1">
+				hola
+			</p>
+		</div>
+	</div>
+
+
+
+<script>
+	const $cuadrado = document.getElementById('cuadrado-2');
+
+	$cuadrado.addEventListener('animationend', (event) => {
+		console.log(event.animationName);
+		if(event.animationName === 'rebote') {
+			$cuadrado.style.animatioName = 'escalera';
+			$cuadrado.style.animationDuration ='3s';
+
+		}
+	});
+</script>
 	
 </body>
 </html>
