@@ -4,7 +4,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	/*height: 100vh;*/
 	color: white;
 	font-family: Arial;
 }
@@ -18,7 +18,7 @@ h1 {
 .canasta {
 	border: 1px solid blue;
 	position: relative;
-	height: 100px;
+	height: 300px;
 	width: 100%;
 	transform: rotate(5deg) skew(10deg) translate(30px) scale(.8);
 
@@ -102,7 +102,8 @@ h1 {
 	/*transform: translate(100px);*/
 	/*transform: translate(-100px);*/
 	/*transform: translate(100px, -100px);*/
-	transform: translate3d(-100px, -100px, 100px);
+	/*transform: translate3d(-100px, -100px, 100px);*/
+	transform: translateZ(100px);
 }	
 
 
@@ -117,4 +118,40 @@ h1 {
 
 .cuadrado.b {
 	transition:1s;
+}
+
+
+.container.sk:hover .cuadrado.c {
+	transform: skew(10deg, 10deg);
+}
+
+.cuadrado.c {
+	transition:1s;
+}
+
+
+.container.o {
+	perspective: 200px;
+}
+
+.container.o:hover .cuadrado.d{
+
+
+	transform: rotateX(45deg);
+	/*transform-origin: x y;*/
+	/*transform-origin: 50% 50% DEFAULT*/
+	transform-origin: top;
+	/*transform-origin: bottom;*/
+
+	/*transform:rotateY(45deg);
+	transform-origin: left;*/
+
+	/*transform: rotateZ(-45deg);*/
+
+	/*transform-origin: left top;
+	*/
+	/*transform-origin: right top;	*/
+
+
+
 }
