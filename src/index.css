@@ -175,8 +175,9 @@ h1 {
 	/*animation-timing-function: ease-out;*/
 	/*animation-timing-function: ease-in-out;*/
 	/*animation-timing-function: linear;	*/
-	/*animation-timing-function: cubic-bezier(1,1,1,1);*/
+	animation-timing-function: cubic-bezier(1,.01,.17,1.2);
 	/*animation-direction: reverse;*/
+	/*animation-timing-function: steps(6);*/
 	animation-direction: alternate;
 
 	/*Para que no regrese a valor inicial*/
