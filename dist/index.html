@@ -48,9 +48,9 @@
 	<h1>Transformacion Scale</h1>
 	
 	<div class="container s">
-		<div class="cuadrado b">
+		<div class="cuadrado b">   
 			
-		</div>
+		</div>   
 	</div>
 
 
@@ -128,7 +128,10 @@
 
 	$cuadrado.addEventListener('animationend', (event) => {
 		console.log(event.animationName);
+
+
 		if(event.animationName === 'rebote') {
+				
 			$cuadrado.style.animatioName = 'escalera';
 			$cuadrado.style.animationDuration ='3s';
 
