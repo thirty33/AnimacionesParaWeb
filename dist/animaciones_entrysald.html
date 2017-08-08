@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animaciones de entrada y de salida</title>
+
+	<style>
+		body{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+
+		}
+
+		.cuadrado {
+			width: 200px;
+			height: 200px;
+			background: #7dc900;
+			/*animation: name time estado */
+			/*animation: anIn .8s;*/
+			animation: anOut .8s forwards;
+
+		}
+
+		@keyframes anIn {
+			0%{
+				transform:translateY(-3000px);
+			}
+
+			60% {
+				transform:translateY(25px);
+			}
+
+			75%{
+				transform:translateY(-10px);
+
+			}
+
+			90%{
+				transform:translateY(5px);
+				
+			}
+
+		}
+
+		@keyframes anOut {
+			0%{
+				transform:translateY(5px);
+				
+			}
+			60%{
+				transform:translateY(-10px);
+
+			}
+			75% {
+				transform:translateY(25px);
+			}
+
+			100%{
+				transform:translateY(-3000px);
+			}
+
+		}
+	</style>
+</head>
+<body>
+
+	<div class="cuadrado">
+		
+	</div>
+	
+</body>
+</html>
